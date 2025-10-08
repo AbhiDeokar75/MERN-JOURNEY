@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter full name" required autocomplete="name"/>
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required autocomplete=""/>
+        </div>
+        <div>
+        <label for="phone">Phone number</label>
+        <input id="phone" type="number" name="phone" placeholder="Enter without country code" required autocomplete=""/>
+        </div>
+        <div>
+        <label for="birth">Date of birth</label>
+        <input id="birth" type="date" name="birth" />
+        </div>
+        <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Atleast 6 Digits" />
+        </div>
+        <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">Select a country</option>
+            <option>India</option>
+            <option>China</option>
+            <option>America</option>
+            <option>UK</option>
+        </select>            
+        </div>
+        <div>
+            <label for="cities">Cities</label>
+            <select name="cities" id="cities" multiple size="3">
+                <option value="">Select a city</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Nagpur</option>
+                <option>Bangalore</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <h1>List of Fruits</h1>
+        <p id="mango" data-product-id="fruit1" data-price="10">Mango - <span>10</span></p>
+        <p id="apple" data-product-id="fruit2" data-price="40">Apple - <span>40</span></p>
+        <p id="banana" data-product-id="fruit3" data-price="30">Banana - <span>30</span></p>
+    </div>
+
+    <script>
+        let mango = document.getElementById("mango");
+        console.log(mango.dataset.productId);
+        mango.dataset.color = "yellow";
+        console.log(mango.dataset.color);
+    </script>
+</body>
+</html>

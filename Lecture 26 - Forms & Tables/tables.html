@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <div>
+      <h2>List of fruits</h2>
+      <p id="mango" data-product-id="abc1" data-price="10">
+        Mango - <span>10</span>
+      </p>
+      <p id="apple">Apple - <span>40</span></p>
+      <p id="banana">Banana - <span>30</span></p>
+    </div>
+    <script>
+      let mango = document.getElementById("mango");
+      console.log(mango.dataset.productId);
+      mango.dataset.color = "pink";
+      console.log(mango.dataset.color);
+    </script>
+
+    <table border="1">
+      <caption>
+        Marksheet
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Student</th>
+          <th>Maths</th>
+          <th>Physix</th>
+          <th>Chem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Bittu</th>
+          <td colspan="2">20</td>
+
+          <td>10</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Indrajeet</th>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>60</td>
+          <td>70</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

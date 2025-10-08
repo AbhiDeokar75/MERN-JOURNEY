@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <hr />
+    <p><strong>Job Description : </strong><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse molestiae assumenda ipsa in quae fuga consequatur itaque labore tenetur harum sit ipsam ipsum, expedita facilis modi id dolore debitis dolorem voluptatibus blanditiis minus officia eos error. Totam tempora suscipit harum, blanditiis expedita doloribus temporibus sunt tempore nulla vitae quas accusantium.</em></p>
+    <p><strong><em>Fill out the form below to apply for the job :</em></strong></p>
+    <hr />
+    <form>
+        <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter full name" required autocomplete="name"/>
+        </div>
+        <br />
+        <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required autocomplete=""/>
+        </div>
+        <br />
+        <div>
+        <label for="phone">Phone number</label>
+        <input id="phone" type="number" name="phone" placeholder="Enter without country code" required autocomplete=""/>
+        </div>
+        <br />
+        <div>
+        <label for="location">location</label>
+        <select>
+            <option value="">Select a location</option>
+            <option>Baner</option>
+            <option>Viman Nagar</option>
+            <option>Hadapsar</option>
+            <option>Hinjewadi</option>
+        </select>
+        </div>
+        <br />
+        <div>
+        <label for="resume">Upload Resume</label>
+        <input id="resume" type="file" required autocomplete="">
+        </div>
+        <br />
+        <div>
+        <label for="currCTC">Current CTC</label>
+        <input id="currCTC" type="number" placeholder="In LPA" required autocomplete="">
+        </div>
+        <br />
+        <div>
+        <label for="salary">Expected Salary</label>
+        <input id="salary" type="number" placeholder="In LPA" required autocomplete="">
+        </div>
+        <br />
+        <div>
+        <label for="exp">Experience</label>
+        <input id="exp" type="checkbox"></label>
+        </div>
+        <br />
+        <div>
+        <label for="shift">Shift</label>
+        <input id="shift1" name="shift1" type="radio">Morning</label>
+        <input id="shift2" name="shift1" type="radio">Night</label>
+        </div>
+        <br />
+        <div>
+        <label>Earliest Joining Date</label>
+        <input type="date" id="joiningDate" type="joiningDate"/>
+        </div>
+        <br />        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
