@@ -20,10 +20,10 @@ const arr = [
 ];
 
 //for primary diagonal -> i == j
-let n = arr[0].length;
+let n = arr3[0].length;
 let sum = 0;
 for (let i = 0; i < n; i++) {
-  sum += arr[i][i];
+  sum += arr3[i][i];
 }
 
 //TC = O(n)
@@ -34,7 +34,7 @@ console.log("Primary Diagonal Sum: ", sum);
 //secondary diagonal -> i + j == n - 1
 sum = 0;
 for (let i = 0; i < n; i++) {
-  sum += arr[i][n - i - 1];
+  sum += arr3[i][n - i - 1];
 }
 
 /* THIS IS ALSO CORRECT
@@ -99,9 +99,9 @@ const arr3 = [1, 2, 3, 4];
 //print all subarrays
 let size = arr3.length;
 
-for (let i = 0; i < size; i++) {
+for (let i = 0; i < m; i++) {
   let subarray = "";
-  for (let j = i; j < size; j++) {
+  for (let j = i; j < m; j++) {
     subarray += arr3[j] + " ";
     console.log(subarray);
   }
@@ -121,7 +121,7 @@ function calSubarraySum(arr3) {
       sum += subsum;
     }
   }
-  return subsum;
+  return sum;
 }
 
 console.log(calSubarraySum(arr3));

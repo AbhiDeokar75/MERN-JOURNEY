@@ -52,8 +52,8 @@ function isPrime (N) {
 
   return true;
 }
-let N = 17;
-console.log(N, isPrime(N));
+n = 17;
+console.log(n, isPrime(n));
 
 
 /* Question
@@ -72,5 +72,5 @@ function printPattern (N) {
   }
 }
 
-N = 5;
-printPattern(N);
+n = 5;
+printPattern(n);
